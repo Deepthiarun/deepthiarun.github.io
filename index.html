@@ -3,8 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Portfolio</title>
+		<title>Deepthi Sadasivan</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<link rel="stylesheet" href="styles.css">
+		<script src="script.js"></script>
+
 	</head>
 	<body>
 		<header>
@@ -25,13 +28,12 @@
 		<main>
 			<div class='nav'>
 				<ul class="nav-ul">
-					<li class="nav-li"><a href="#skills">Skills</a></li>
-					<li class="nav-li"><a href="#education">Education</a></li>
-					<li class="nav-li"><a href="#ac-exp">Academic Experience</a></li>
-					<li class="nav-li"><a href="#prof-exp">Professional Experience</a></li>
-					<li class="nav-li"><a href="#certifications">Certifications</a></li>
-					<li class="nav-li"><a href="#awards">Awards</a></li>
-
+					<li id="#skills" class="nav-li active">Skills</li>
+					<li id="#education" class="nav-li">Education</li>
+					<li id="#ac-exp" class="nav-li">Academic Experience</li>
+					<li id="#prof-exp" class="nav-li">Professional Experience</li>
+					<li id="#certifications" class="nav-li">Certifications</li>
+					<li id="#awards" class="nav-li">Awards</li>
 				</ul>
 			</div>
 			<div class="main-content">
@@ -119,10 +121,19 @@
 			</div>
 			<div class="featured-content">
 				<section class="featured-title">
-					<h2>Featured Work</h2>
+					<h2>Featured Projects</h2>
 				</section>
 				<section class="featured-body">
 
+					<div class="featured-item">
+						<div class="featured-image-box">
+							<a href="https://public.tableau.com/profile/deepthi2931#!/vizhome/AgriculturalLosses2015_0/Dashboard1?publish=yes" target="new">
+								<img class="featured-image" src="img/datavisual.png" alt="Data Visualization">
+							</a>
+						</div>
+						<div class="featured-caption">Data Visualization</div>
+					</div>
+	
 					<div class="featured-item">
 						<div class="featured-image-box">
 							<a href="https://deets-queencitymap.netlify.com/" target="new">
@@ -148,6 +159,7 @@
 						</div>
 						<div class="featured-caption">Memory Game</div>
 					</div>
+		
 				</section>
 			</div>
 		</main>

@@ -24,6 +24,10 @@ hr{
     border: 3px solid #7d97ad;
 }
 
+a{
+    text-decoration: none;
+}
+
 a:hover {
     opacity: 0.5;
 }
@@ -86,18 +90,28 @@ main{
 
 /* Nav content default styles */
 .nav {
-    width: 10%;
+    width: 15%;
     position: relative;
 	text-align: justify;
 }
 
 .nav-ul{
 	padding:0;
-	list-style-type:none
+    list-style-type:none;
+    background-color: #ffffff;
 }
 .nav-li{
-	padding:10px 0;
-	
+    min-height:30px;
+    padding:10px 5px 0;
+    margin: 5px;
+    background-color: #5ba4e4;
+    font-size: 8px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.active{
+    background-color: #04559c;  
 }
 
 .hidden{
@@ -106,9 +120,10 @@ main{
 
 /* Main content default styles */
 .main-content {
-    width: 90%;
-    position: relative;
-	text-align: justify;
+    width: 85%;
+    text-align: justify;
+    max-height: 450px;
+    overflow: scroll;
 }
 /*
 .main-background{
@@ -128,10 +143,11 @@ li {
 }
 .main-text {
     font-size: 15px;
-    font-weight: bold;
+    /* font-weight: bold; */
     color: #033d70;
     display: block;
     position: relative;
+    padding-top: 5px;
 }
 
 .main-large-text::before {
@@ -149,13 +165,10 @@ li {
 }
 
 .main-large-text {
-    font-size: large;
+    font-size: 15px;
+    font-weight: bold;
 }
 
-.main-text {
-    font-size: medium;
-    padding-top: 5px;
-}
 
 /* Featured Projects Section */
 .featured-content {
@@ -173,7 +186,7 @@ li {
 }
 
 .featured-item {
-    width: 80%;
+    width: 50%;
 }
 
 .featured-image-box {
@@ -182,9 +195,9 @@ li {
 }
 
 .featured-image {
-    min-width: 300px;
+    min-width: 200px;
     min-height: 150px;
-    max-width: 300px;
+    max-width: 200px;
     max-height: 150px;
 }
 
@@ -273,8 +286,12 @@ footer {
         font-size: 13px;
     }
 
+    .nav-li{
+        font-size: 12px;
+    }
+
     .main-large-text {
-        font-size: larger;
+        font-size: 18px;
     }
 
     .main-text{
@@ -314,7 +331,7 @@ footer {
     }
 	main, 
 	{
-        padding: 5px 40px;
+        padding: 5px 20px;
         width: 700px;
         margin-left: auto;
         margin-right: auto;
@@ -332,8 +349,12 @@ footer {
         min-height: 400px;
     }
 
+    .nav-li{
+        font-size: 15px;
+    }
+
     .main-large-text {
-        font-size: x-large;
+        font-size: 20px;
     }
 
     .main-text {
@@ -349,8 +370,12 @@ footer {
     main, 
     header, 
     footer {
-        padding: 20px 80px;
+        padding: 10px 20px;
         margin-left: auto;
         margin-right: auto;
+        max-width: 1200px;
+    }
+    .nav-li{
+        font-size: 15px;
     }
 }
