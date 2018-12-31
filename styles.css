@@ -1,0 +1,356 @@
+/* Default Styles  upto 320 px */
+* {
+    /* outline: 1px solid red; for design/debuggin purpose only */
+    margin: 0;
+}
+
+
+body {
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+hr{
+    display: block;
+    border: 3px solid #7d97ad;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+main, 
+header, 
+footer {
+    width: 100%;
+    padding: 1px 2px;
+}
+
+/* Header Default Styles */
+.header-container {
+    width: 100%;
+    color: #2d3c49;
+    display: flex;
+    flex-direction: row;
+}
+.header-image-box {
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.header-image {
+    max-width: 70%;
+}
+
+.header-text-box {
+	width: 80%;
+    display: flex;
+    align-self: flex-end;
+    font-weight: bold;
+	color:#2d3c49;
+    text-align: right;
+    flex-direction: column;
+}
+
+.header-name {
+    font-variant-caps: all-petite-caps;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header-caption {
+    font-size: 8px;
+    font-style: italic;
+}
+
+.header-line {
+    width: 100%;
+}
+
+main{
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+/* Nav content default styles */
+.nav {
+    width: 10%;
+    position: relative;
+	text-align: justify;
+}
+
+.nav-ul{
+	padding:0;
+	list-style-type:none
+}
+.nav-li{
+	padding:10px 0;
+	
+}
+
+.hidden{
+	transform: translate(-500,0)
+}
+
+/* Main content default styles */
+.main-content {
+    width: 90%;
+    position: relative;
+	text-align: justify;
+}
+/*
+.main-background{
+    background: no-repeat center url("../img/profile.png");
+    opacity: 0.4;
+    width: 100%;
+}
+*/
+
+li {
+    font-size: 18px;
+}
+.h2-heading{
+    font-size: 20px;
+    font-weight: bold;
+    color: #033d70;
+}
+.main-text {
+    font-size: 15px;
+    font-weight: bold;
+    color: #033d70;
+    display: block;
+    position: relative;
+}
+
+.main-large-text::before {
+        content: "";
+        background-image: url(https://mdn.mozillademos.org/files/11307/bubbles.png),linear-gradient(to left, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
+        background-repeat: repeat, no-repeat;
+        background-position: left,right;
+        background-size: cover, cover;
+        opacity: 0.3;
+        top: 0;
+        left: 0;    
+        bottom: 0;
+        right: 0;
+        position: absolute;
+}
+
+.main-large-text {
+    font-size: large;
+}
+
+.main-text {
+    font-size: medium;
+    padding-top: 5px;
+}
+
+/* Featured Projects Section */
+.featured-content {
+    padding-top: 10px;
+    width: 100%;
+}
+
+.featured-title {
+    color: #1b2c3b;
+    padding-left: 10px;
+}
+
+.featured-body {
+    width: 100%;
+}
+
+.featured-item {
+    width: 80%;
+}
+
+.featured-image-box {
+    width: 100%;
+    text-align: center;
+}
+
+.featured-image {
+    min-width: 300px;
+    min-height: 150px;
+    max-width: 300px;
+    max-height: 150px;
+}
+
+.featured-caption {
+    font-variant-caps: all-petite-caps;
+    font-size: 1.5em;
+    width: 100%;
+    text-align: center;
+}
+
+.featured-url {
+    width: 100%;
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* Footer Styles */
+footer {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+
+.copyright {
+    margin-right: 0;
+    width: 60%;
+    font-size: 10px;
+    font-style: italic;
+    display: inline-block;
+    text-align: left;
+}
+
+.icon-container {
+    width: 40%;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.icon-box {
+    width: 20%;
+}
+
+.contact-image {
+    max-height: 15px;
+    max-width: 15px;
+}
+
+/* Media queries */
+
+/* Screen widht higher than GalaxyS (portrait mode) */
+@media 	screen and (min-width: 361px) {
+ 
+    header, 
+    footer {
+        padding: 2px 40px;
+    }
+
+	main {
+	        padding: 2px 20px;	
+	}
+    .main-background {
+        min-height: 300px;
+    }
+
+    .header-name {
+        font-size: 30px;
+    }
+
+    .header-caption {
+        font-size: 10px;
+    }
+}
+
+
+@media 	screen and (min-width: 481px){
+    .header-name {
+        font-size: 40px;
+    }
+
+    .header-caption {
+        font-size: 13px;
+    }
+
+    .main-large-text {
+        font-size: larger;
+    }
+
+    .main-text{
+        font-size: large;
+    }
+
+    .featured-body {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+
+    .featured-item {
+        width: 33.3%;
+        margin-right: 0;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
+
+    .contact-image {
+        max-width: 20px;
+        max-height: 20px;
+    }
+}
+
+/* Screen wider than iPad (portarit mode) */
+@media 	screen and (min-width: 781px) {
+    header, 
+    footer {
+        padding: 5px 80px;
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+	main, 
+	{
+        padding: 5px 40px;
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header-name {
+        font-size: 50px;
+    }
+
+    .header-caption {
+        font-size: 20px;
+    }
+
+    .main-background {
+        min-height: 400px;
+    }
+
+    .main-large-text {
+        font-size: x-large;
+    }
+
+    .main-text {
+        font-size: larger;
+    }
+
+    .copyright {
+        font-size: 14px;
+    }
+}
+
+@media 	screen and (min-width: 1024px){
+    main, 
+    header, 
+    footer {
+        padding: 20px 80px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
